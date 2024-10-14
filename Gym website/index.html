@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYMNIE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0px;
+        background: url("fitness-1882721_1280.jpg");
+        background-size: 100%;
+        /* height: 1111px; */
+      }
+
+      .left {
+        /* border: 3px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 2px;
+        margin-top: 5px;
+      }
+      .center {
+        display: block;
+        width: 33%;
+        /* border: 3px solid red; */
+        margin: auto;
+        margin-top: 5px;
+      }
+      .right {
+        /* border: 3px solid goldenrod; */
+        display: inline-block;
+        position: absolute;
+        right: 2px;
+        top: 1px;
+        margin-top: 5px;
+      }
+      ul {
+        list-style-type: none;
+
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .navbar {
+        display: inline-block;
+        margin: 0px 20px 0px 15px;
+        background-color: black;
+        border-radius: 28px;
+        /* border: 2px solid white; */
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      /* li{
+        display: inline-block;
+        font-size: 20px;
+       } */
+      a {
+        color: whitesmoke;
+        margin: 0px 5px 0px 4px;
+        padding: 10px 7px 10px 7px;
+        font-size: medium;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 7px;
+        background-color: rgb(117, 115, 115);
+        color: aliceblue;
+        border-radius: 50px;
+      }
+      button:hover {
+        background-color: blueviolet;
+        cursor: pointer;
+      }
+
+      .btn3:hover {
+        background-color: blueviolet;
+        color: azure;
+      }
+      .left img {
+        width: 110px;
+        height: 110px;
+      }
+      .container {
+        /* border: 3px solid purple; */
+        background-color: black;
+        color: whitesmoke;
+        margin: 112px 30px 5px 50px;
+        display: block;
+        width: 291px;
+        height: 291px;
+      }
+      .dropdown {
+        display: block;
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+      }
+      .dropdown:hover .dropdown-content {
+       
+        display: block;
+      }
+      .dropdown-value {
+        
+        display: flex;
+        flex-direction: row;
+      }
+      .form {
+        text-align: center;
+        margin: 62px 4px 5px 6px;
+      }
+      input {
+        width: 100%;
+        border-radius: 40px;
+        padding: 4px;
+        margin-bottom: 7px;
+      }
+      .form-content {
+        margin: 8px 11px 5px -3px;
+      }
+      .sub2 {
+        display: block;
+        width: 150px;
+        text-align: center;
+        margin: auto;
+      }
+      h4 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .dropdown-content > ul {
+        display: flex;
+        flex-direction: row;
+      }
+      li {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- for logo -->
+      <div class="left">
+        <img src="man-7328236_1280.png" alt="" />
+      </div>
+      <!-- for navbar -->
+      <div class="center">
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">Check your fitness </a></li>
+
+              <li class="dropdown">
+                <a href="#"
+                  >Contact Us
+
+                  <ul class="dropdown-content">
+                    <li class="dropdown-value"><a href="#">email</a></li>
+                    <li class="dropdown-value"><a href="#">web</a></li>
+                    <li class="dropdown-value"><a href="#">centre</a></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- for buttons -->
+      <div class="right">
+        <button class="btn1">Check membership plans</button>
+        <button class="btn2">share wih us</button>
+        <button class="btn3">Apply as instructor</button>
+      </div>
+
+      <div class="container">
+        <form action="" class="form">
+          <h4>JOIN THE BEST GYM IN SIKAR</h4>
+          <div class="form-content">
+            <input type="text" placeholder="NAME" />
+            <input type="text" placeholder="AGE" />
+            <input type="email" placeholder="email" />
+            <button class="sub2" type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
